@@ -11,4 +11,15 @@
         <tag>docs</tag>
       </tags>
   </entry>
+  <entry>
+    <title><![CDATA[FirstBlog]]></title>
+    <url>%2F2017%2F08%2F03%2FFirstBlog%2F</url>
+    <content type="text"><![CDATA[FistPage in my blog. the future is whitin reach.]]></content>
+      <categories>
+        <category>Life</category>
+      </categories>
+      <tags>
+        <tag>life</tag>
+      </tags>
+  </entry>
 </search>
