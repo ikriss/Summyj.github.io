@@ -145,15 +145,7 @@
 <meta property="og:description" content="首先声明：这并不是一篇教程。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ou7wdump3.bkt.clouddn.com/hexo.PNG">
-<meta property="og:image" content="http://ou7wdump3.bkt.clouddn.com/5.gif">
-<meta property="og:image" content="http://ou7wdump3.bkt.clouddn.com/36.jpg">
-<meta property="og:image" content="http://ou7wdump3.bkt.clouddn.com/59.jpg">
-<meta property="og:image" content="http://ou7wdump3.bkt.clouddn.com/8.jpg">
-<meta property="og:image" content="http://ou7wdump3.bkt.clouddn.com/66.jpg">
-<meta property="og:image" content="http://ou7wdump3.bkt.clouddn.com/21.gif">
-<meta property="og:image" content="http://ou7wdump3.bkt.clouddn.com/68.jpg">
-<meta property="og:image" content="http://ou7wdump3.bkt.clouddn.com/157.gif">
-<meta property="og:updated_time" content="2017-08-18T02:36:58.371Z">
+<meta property="og:updated_time" content="2017-08-22T01:38:56.446Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+GithubPages&amp;CodingPages搭建自己的个人博客">
 <meta name="twitter:description" content="首先声明：这并不是一篇教程。">
@@ -476,7 +468,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  4,468
+                  4,477
                 </span>
               
 
@@ -543,16 +535,13 @@
 <p>如果你不想了解前两个部分，可以直接跳到第3部分。</p>
 </blockquote>
 <p><strong>好了，废话就不多说了，开车!</strong></p>
-<p><img src="http://ou7wdump3.bkt.clouddn.com/5.gif" alt="开车"></p>
 <hr>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h2 id="搭建博客难吗？"><a href="#搭建博客难吗？" class="headerlink" title="搭建博客难吗？"></a>搭建博客难吗？</h2><p>我可以很负责人的告诉你：<strong>不仅不难，而且还很简单。</strong></p>
 <p>那么，只有程序员才能搭建博客吗？</p>
-<p><img src="http://ou7wdump3.bkt.clouddn.com/36.jpg" alt="不存在的"></p>
 <p>或许你不相信，但我确实见过有许多非互联网行业的人也搭建了自己的博客。所以在搭建博客这件事上，确实没有专业之分。</p>
 <p>说白了，搭建博客就是用一堆别人的东西，来做一个你自己的东西：Hexo、主题、GithubPages、CodingPages，这些没一样是你的。而且这些都是免费的，除了买域名要花一只棒棒糖的钱（我搭建博客一共就花了3块钱）</p>
 <p>所以，人家设计的东西，你只要拿来用就可以了。</p>
 <h2 id="需要自己知道一些背景知识吗？"><a href="#需要自己知道一些背景知识吗？" class="headerlink" title="需要自己知道一些背景知识吗？"></a>需要自己知道一些背景知识吗？</h2><p>上边说了，搭建博客是没有专业之分的。你可以不知道什么是Github,hexo,GithubPages/CodingPages。甚至在技术方面什么也不懂。</p>
-<p><img src="http://ou7wdump3.bkt.clouddn.com/59.jpg" alt="说的跟真的一样"></p>
 <p>可能你不相信，但结合我的搭建过程，我可以先给你说说他们都是怎么用的：</p>
 <ul>
 <li>Github：只是建立了一个github.io的库，没有账号的话可以注册一个。所以你有没有账号，会不会操作Github都没有关系。</li>
@@ -568,7 +557,6 @@
 <li>细心：一定要细心，确保每一步都是正确的。</li>
 <li>一定的学习能力和钻研精神，遇到困难一定要面对它，主动解决。</li>
 </ul>
-<p><img src="http://ou7wdump3.bkt.clouddn.com/8.jpg" alt="面对疾风吧"></p>
 <h2 id="为什么搭建博客？"><a href="#为什么搭建博客？" class="headerlink" title="为什么搭建博客？"></a>为什么搭建博客？</h2><p>这个问题相信你已经有了自己的答案，但我还是建议你看看这2篇文章：</p>
 <ul>
 <li><a href="https://mp.weixin.qq.com/s?__biz=MzA4NTQwNDcyMA==&amp;mid=402564613&amp;idx=1&amp;sn=d2b7c75b11046a0dcf8df77e737d2b4c#rd" title="我为什么坚持写博客？" target="_blank" rel="external">我为什么坚持写博客？</a></li>
@@ -608,7 +596,6 @@
 <li>顺便看看 GitHub 工作原理，最好的团队协作流程</li>
 <li>GitHub 是趋势</li>
 </ul>
-<p><img src="http://ou7wdump3.bkt.clouddn.com/66.jpg" alt="有道理"></p>
 <h2 id="概念介绍"><a href="#概念介绍" class="headerlink" title="概念介绍"></a>概念介绍</h2><h3 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h3><p>Hexo 是一个简单、快速、强大的静态博客框架，基于Node.js。由台湾大学生tommy351创建。并把它开源到了Github上，这里是它在Github上的地址：<a href="https://github.com/hexojs/hexo" title="HexoGithub" target="_blank" rel="external">HexoGithub</a>，它主要有以下优点：</p>
 <ul>
 <li>极速生成静态页面</li>
@@ -619,7 +606,6 @@
 <p>更多内容可以查看Hexo的官方文档，建议你只看看介绍部分，其它的你现在也看不太懂。等你搭建好了博客再去详细了解其他的内容就会轻松很多：<a href="https://hexo.io/docs/" title="Hexo" target="_blank" rel="external">Hexdocs</a></p>
 <h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h3><p>GitHub是一个代码托管网站和社交编程网站。这里聚集了世界上各路技术牛叉的大牛，和最优秀的代码库。是全球程序员的天堂。因为是国外的，所以界面全是英文。博主英语过了六级刚开始接触的时候心都突突，不过不要怕，不是还有翻译么，</p>
 <p>也有好多人调侃它是全球同性交友平台，其实我不太懂这个梗（女程序员也是很多的好么）</p>
-<p><img src="http://ou7wdump3.bkt.clouddn.com/21.gif" alt="不开森"></p>
 <h3 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h3><p>GitHub Pages是用来托管 GitHub 上静态网页的免费站点，其他的不多说。</p>
 <h3 id="CodingPages"><a href="#CodingPages" class="headerlink" title="CodingPages"></a>CodingPages</h3><p>和GithubPages功能相同，其对应的Coding平台也可以实现和Github相似的功能。但没有后者那么出名。是香港的公司，也算是国内的。</p>
 <p>看了这些，我相信你一定还是一脸懵逼的。但你可以简单理解成下边的的一段话：</p>
@@ -685,7 +671,8 @@
 <li>创建一个菜单页面作为文章目录：<a href="https://www.zhihu.com/question/33324071" target="_blank" rel="external">hexo下新建页面下如何放多个文章</a></li>
 <li>博客加密：<a href="https://github.com/MikeCoder/hexo-blog-encrypt" target="_blank" rel="external">加密插件Github，issue里有解决next主题兼容的方法</a></li>
 </ul>
-<p>上边这些链接里的设置，均为博主亲测有效。从这些链接可以看出，博主也是折腾了很久的。。。<br><img src="http://ou7wdump3.bkt.clouddn.com/68.jpg" alt="鬼知道我经历了什么"></p>
+<p>上边这些链接里的设置，均为博主亲测有效。从这些链接可以看出，博主也是折腾了很久的。。。</p>
+<p>鬼知道我经历了什么</p>
 <h2 id="在Github上看issue或者提issue"><a href="#在Github上看issue或者提issue" class="headerlink" title="在Github上看issue或者提issue"></a>在Github上看issue或者提issue</h2><p>如果你还想折腾，还有两种途径：</p>
 <ul>
 <li>可以看看next在Github上的issue：这些都是别人提的，可能会有你想要的设置。如果你遇到了问题，也可以自己提issue。这是网址：<a href="https://github.com/iissnan/hexo-theme-next/issues" target="_blank" rel="external">next/issues</a></li>
@@ -704,7 +691,6 @@
 </ul>
 <hr>
 <h1 id="The-End"><a href="#The-End" class="headerlink" title="The End"></a>The End</h1><p>终于写完啦，如果除了文中博主提到的点。你还有其它问题，可以在评论区留言，我每一条都会回复哦~</p>
-<p><img src="http://ou7wdump3.bkt.clouddn.com/157.gif" alt="再见喽~"></p>
 
       
     </div>
@@ -733,7 +719,7 @@
   <p><span>本文标题:</span><a href="/2017/08/06/Hexo-GithubPages-CodingPages搭建自己的个人博客/">Hexo+GithubPages&CodingPages搭建自己的个人博客</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Ada.jmy 的个人博客">Ada.jmy</a></p>
   <p><span>发布时间:</span>2017年08月06日 - 22:08</p>
-  <p><span>最后更新:</span>2017年08月18日 - 10:08</p>
+  <p><span>最后更新:</span>2017年08月22日 - 09:08</p>
   <p><span>原始链接:</span><a href="/2017/08/06/Hexo-GithubPages-CodingPages搭建自己的个人博客/" title="Hexo+GithubPages&CodingPages搭建自己的个人博客">http://yoursite.com/2017/08/06/Hexo-GithubPages-CodingPages搭建自己的个人博客/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2017/08/06/Hexo-GithubPages-CodingPages搭建自己的个人博客/"  aria-label="复制成功！"></i></span>
   </p>
@@ -1105,20 +1091,6 @@
 </span>
 </div>
 
-<br></br>
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Gemini
-  </a>
-</div>
-
-
-<div class="theme-info">
   <div class="powered-by"></div>
   <span class="post-count">Site Count:23.0k words in total</span>
 </div>
