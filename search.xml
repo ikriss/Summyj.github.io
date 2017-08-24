@@ -80,8 +80,8 @@
         <category>网络</category>
       </categories>
       <tags>
-        <tag>TCP</tag>
         <tag>UDP</tag>
+        <tag>TCP</tag>
       </tags>
   </entry>
   <entry>
@@ -148,9 +148,9 @@
         <category>网络</category>
       </categories>
       <tags>
+        <tag>TCP</tag>
         <tag>IP</tag>
         <tag>OSI</tag>
-        <tag>TCP</tag>
       </tags>
   </entry>
   <entry>
