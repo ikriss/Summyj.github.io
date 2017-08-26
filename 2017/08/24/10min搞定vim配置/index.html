@@ -173,7 +173,7 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20170612164405893?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3VtbXlfSg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170612162408012?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3VtbXlfSg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170612162557560?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3VtbXlfSg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2017-08-24T05:26:03.564Z">
+<meta property="og:updated_time" content="2017-08-26T08:15:03.127Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="10min搞定vim配置">
 <meta name="twitter:description" content="Vim是linux操作系统的一款非常强大的编辑器，配置Vim就是要让其形成一个像VS一样的IDE集成环境。所以为了能在linux下实现高效编程和开发，Vim的配置是必须要完成的一项任务。">
@@ -530,7 +530,7 @@
 <p>所以，本文是一个初学者配置vim后的总结篇，也希望其他的初学者也能快速配置好vim，不再迷茫。</p>
 <p>相信我，这一切，只需要10分钟~</p>
 <hr>
-<h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><p>本文主要内容有：</p>
+<h1 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h1><p>本文主要内容有：</p>
 <p>1.vim安装</p>
 <p>2.vim配置,包括</p>
 <ul>
@@ -544,7 +544,7 @@
 <p>本文将从4个方面来描述安装配置的过程：<strong>安装配置文件/插件的概念（what）、为什么要安装（why）、安装过程（how）、安装完成后的效果</strong>。</p>
 <p>博主使用的是centos虚拟机系统，以下安装均在此系统内进行。</p>
 <hr>
-<h2 id="vim安装"><a href="#vim安装" class="headerlink" title="vim安装"></a>vim安装</h2><p><strong>What？</strong></p>
+<h1 id="vim安装"><a href="#vim安装" class="headerlink" title="vim安装"></a>vim安装</h1><p><strong>What？</strong></p>
 <p>文章开头已经说过了，vim是一款编辑器。其实它相当于windows里的记事本一样，能编辑文字。但不同的是它可以通过配置编写运行代码，进行linux下的开发。</p>
 <p>但百度过的小伙伴肯定也听过vi这个概念，其实简单点来说，它们都是多模式编辑器，不同的是vim是vi的升级版本。它不仅兼容vi的所有指令，而且还有一些新的特性在里面。例如语法加亮，可视化操作不仅可以在终端运行，也可以运行于x window、 mac os、 windows。 </p>
 <p><strong>Why？</strong></p>
@@ -563,8 +563,7 @@
 <p>此时输入ls命令即可看到系统中多了一个test.c文件</p>
 <p><img src="http://img.blog.csdn.net/20170612104530653?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3VtbXlfSg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="5"></p>
 <hr>
-<h2 id="vimrc配置"><a href="#vimrc配置" class="headerlink" title=".vimrc配置"></a>.vimrc配置</h2><hr>
-<p><strong>What？</strong></p>
+<h1 id="vimrc配置"><a href="#vimrc配置" class="headerlink" title=".vimrc配置"></a>.vimrc配置</h1><p><strong>What？</strong></p>
 <p>我们常常在网上看到程序员们各种酷炫拽的代码编辑界面。由于配色方案的不同，各种颜色的代码交织在一起，仿佛置身于一个奇妙的世界。</p>
 <p><img src="http://img.blog.csdn.net/20170612111855748?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3VtbXlfSg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="6"></p>
 <p>这是我在网上截的大神图，怎么样，是不是牛逼的惊天地，泣鬼神。。这就是程序员装逼大法之“.vimrc”文件的配置</p>
@@ -587,7 +586,9 @@
 <p><img src="http://img.blog.csdn.net/20170612142745751?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3VtbXlfSg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="11"></p>
 <p><strong>效果</strong></p>
 <p>将以上列出的全部配置输入成功后，你的vim就会有如下效果：</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://img.blog.csdn.net/20170612143515608?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3VtbXlfSg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="13"></h2><h2 id="gcc-g-安装"><a href="#gcc-g-安装" class="headerlink" title="gcc/g++安装"></a>gcc/g++安装</h2><p><strong>What？</strong></p>
+<p><img src="http://img.blog.csdn.net/20170612143515608?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3VtbXlfSg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="13"></p>
+<hr>
+<h1 id="gcc-g-安装"><a href="#gcc-g-安装" class="headerlink" title="gcc/g++安装"></a>gcc/g++安装</h1><p><strong>What？</strong></p>
 <p>编译是代码运行成功的前一步，gcc/g++就是linux中的编译器，前者是C语言的编译器，后者是C++的编译器。</p>
 <p><strong>Why？</strong></p>
 <p>为了能在linux中实现代码编译，安装他们是势在必行的。</p>
@@ -602,12 +603,14 @@
 <p>安装好之后，你就可以编写程序并运行了。打开test.c文件，输入源程序，保存退出：</p>
 <p><img src="http://img.blog.csdn.net/20170612152813562?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3VtbXlfSg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="15"></p>
 <p>紧接着用gcc进行编译运行：</p>
-<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="http://img.blog.csdn.net/20170612152853930?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3VtbXlfSg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="16"></h2><h2 id="gdb安装"><a href="#gdb安装" class="headerlink" title="gdb安装"></a>gdb安装</h2><p>gdb是linux的代码调试器，关于其安装可以用以下命令：</p>
+<p><img src="http://img.blog.csdn.net/20170612152853930?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3VtbXlfSg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="16"></p>
+<hr>
+<h1 id="gdb安装"><a href="#gdb安装" class="headerlink" title="gdb安装"></a>gdb安装</h1><p>gdb是linux的代码调试器，关于其安装可以用以下命令：</p>
 <p>yum install gdb（事实上，yum就是linux的安装命令）</p>
 <p>直接安装，也可以点击这里：<a href="http://blog.csdn.net/summy_J/article/details/72846978" target="_blank" rel="external">linux下gdb的安装方法</a> 进行安装</p>
 <p>至于其效果，在这里就不演示了，调试命令需要大家自己练习掌握。。</p>
 <hr>
-<h2 id="ctags、taglist安装"><a href="#ctags、taglist安装" class="headerlink" title="ctags、taglist安装"></a>ctags、taglist安装</h2><p><strong>What？</strong></p>
+<h1 id="ctags、taglist安装"><a href="#ctags、taglist安装" class="headerlink" title="ctags、taglist安装"></a>ctags、taglist安装</h1><p><strong>What？</strong></p>
 <p>TagList插件是一款基于ctags，在vim代码窗口旁以分割窗口形式显示当前的代码结构概览，增加代码浏览的便利程度的vim插件。所以，要安装taglist就得先安装ctags.</p>
 <p><strong>Why？</strong></p>
 <p>此插件可以方便代码浏览，所以下载百利而无一害</p>
@@ -629,7 +632,7 @@
 <p><img src="http://img.blog.csdn.net/20170612154145010?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3VtbXlfSg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="21"></p>
 <p>右边的main函数高亮表示当前在main函数的编辑区内。</p>
 <hr>
-<h2 id="winmanager安装"><a href="#winmanager安装" class="headerlink" title="winmanager安装"></a>winmanager安装</h2><p><strong>What？</strong></p>
+<h1 id="winmanager安装"><a href="#winmanager安装" class="headerlink" title="winmanager安装"></a>winmanager安装</h1><p><strong>What？</strong></p>
 <p>winmanager是vim中的文件资源管理器。</p>
 <p><strong>Why？</strong></p>
 <p>有了它，我们可以看到当前工作目录下的文件。便于操作</p>
@@ -660,7 +663,7 @@
 <p><img src="http://img.blog.csdn.net/20170612162557560?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3VtbXlfSg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="27"></p>
 <p>同样在FileList中点击makefile就可以直接跳转到它的界面，想必你也知道winmanager文件资源管理器的深刻含义了。</p>
 <hr>
-<h2 id="The-End"><a href="#The-End" class="headerlink" title="The End"></a>The End</h2><p>当然，除了上面讲的插件。还有很多的vim插件，但对于小白来说，这些插件已经足够了。如果想在安装别的插件，可以自行百度。而.vimrc的配置也绝不是文中列举的那些，还有很多个性化的配置方案。有余力者也可以百度下载。</p>
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The End"></a>The End</h1><p>当然，除了上面讲的插件。还有很多的vim插件，但对于小白来说，这些插件已经足够了。如果想在安装别的插件，可以自行百度。而.vimrc的配置也绝不是文中列举的那些，还有很多个性化的配置方案。有余力者也可以百度下载。</p>
 
       
     </div>
@@ -975,7 +978,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概要"><span class="nav-number">1.</span> <span class="nav-text">概要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vim安装"><span class="nav-number">2.</span> <span class="nav-text">vim安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vimrc配置"><span class="nav-number">3.</span> <span class="nav-text">.vimrc配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">4.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gcc-g-安装"><span class="nav-number">5.</span> <span class="nav-text">gcc/g++安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#-1"><span class="nav-number">6.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gdb安装"><span class="nav-number">7.</span> <span class="nav-text">gdb安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ctags、taglist安装"><span class="nav-number">8.</span> <span class="nav-text">ctags、taglist安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#winmanager安装"><span class="nav-number">9.</span> <span class="nav-text">winmanager安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-End"><span class="nav-number">10.</span> <span class="nav-text">The End</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#概要"><span class="nav-number">1.</span> <span class="nav-text">概要</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vim安装"><span class="nav-number">2.</span> <span class="nav-text">vim安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vimrc配置"><span class="nav-number">3.</span> <span class="nav-text">.vimrc配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#gcc-g-安装"><span class="nav-number">4.</span> <span class="nav-text">gcc/g++安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#gdb安装"><span class="nav-number">5.</span> <span class="nav-text">gdb安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ctags、taglist安装"><span class="nav-number">6.</span> <span class="nav-text">ctags、taglist安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#winmanager安装"><span class="nav-number">7.</span> <span class="nav-text">winmanager安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#The-End"><span class="nav-number">8.</span> <span class="nav-text">The End</span></a></li></ol></div>
             
 
           </div>
