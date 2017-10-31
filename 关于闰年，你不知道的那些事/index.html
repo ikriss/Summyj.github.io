@@ -145,7 +145,7 @@
 <meta property="og:description" content="“四年一闰，百年不闰，四百年再闰”。你知道为什么吗？">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ou7wdump3.bkt.clouddn.com/1502888694656.jpg">
-<meta property="og:updated_time" content="2017-10-31T06:23:08.497Z">
+<meta property="og:updated_time" content="2017-10-31T06:36:06.827Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于闰年，你不知道的那些事">
 <meta name="twitter:description" content="“四年一闰，百年不闰，四百年再闰”。你知道为什么吗？">
@@ -532,29 +532,29 @@
 <p>当然，根据规则，我们就可以编写代码判断了：</p>
 <pre><code class="C++"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>
 <span class="function"></span>{
-<span class="keyword">int</span> year;
-<span class="built_in">cin</span> &gt;&gt; year;
+    <span class="keyword">int</span> year;
+    <span class="built_in">cin</span> &gt;&gt; year;
 
-<span class="keyword">if</span> (year % <span class="number">4</span> == <span class="number">0</span>)
-{
-    <span class="keyword">if</span> (year % <span class="number">100</span> != <span class="number">0</span>)<span class="comment">//1. 能整除4，不能整除100</span>
+    <span class="keyword">if</span> (year % <span class="number">4</span> == <span class="number">0</span>)
     {
-        <span class="built_in">cout</span> &lt;&lt; <span class="string">"是闰年\n"</span> &lt;&lt; <span class="built_in">endl</span>;
+        <span class="keyword">if</span> (year % <span class="number">100</span> != <span class="number">0</span>)<span class="comment">//1. 能整除4，不能整除100</span>
+        {
+            <span class="built_in">cout</span> &lt;&lt; <span class="string">"是闰年\n"</span> &lt;&lt; <span class="built_in">endl</span>;
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> ((year % <span class="number">100</span>==<span class="number">0</span>) &amp;&amp; (year % <span class="number">400</span>==<span class="number">0</span>))<span class="comment">//2. 能整除100， 又能整除400</span>
+        {
+            <span class="built_in">cout</span> &lt;&lt; <span class="string">"是闰年\n"</span> &lt;&lt; <span class="built_in">endl</span>;
+        }
+        <span class="keyword">else</span><span class="comment">//其它情况不是闰年</span>
+        {
+            <span class="built_in">cout</span> &lt;&lt; <span class="string">"不是闰年\n"</span> &lt;&lt; <span class="built_in">endl</span>;
+        }
     }
-    <span class="keyword">else</span> <span class="keyword">if</span> ((year % <span class="number">100</span>==<span class="number">0</span>) &amp;&amp; (year % <span class="number">400</span>==<span class="number">0</span>))<span class="comment">//2. 能整除100， 又能整除400</span>
-    {
-        <span class="built_in">cout</span> &lt;&lt; <span class="string">"是闰年\n"</span> &lt;&lt; <span class="built_in">endl</span>;
-    }
-    <span class="keyword">else</span><span class="comment">//其它情况不是闰年</span>
+    <span class="keyword">else</span><span class="comment">//不能整除4就不是闰年</span>
     {
         <span class="built_in">cout</span> &lt;&lt; <span class="string">"不是闰年\n"</span> &lt;&lt; <span class="built_in">endl</span>;
     }
-}
-<span class="keyword">else</span><span class="comment">//不能整除4就不是闰年</span>
-{
-    <span class="built_in">cout</span> &lt;&lt; <span class="string">"不是闰年\n"</span> &lt;&lt; <span class="built_in">endl</span>;
-}
-system(<span class="string">"pause"</span>);
+    system(<span class="string">"pause"</span>);
 }
 </code></pre>
 
