@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[你的文件备份了吗？]]></title>
+    <url>%2F%E4%BD%A0%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%87%E4%BB%BD%E4%BA%86%E5%90%97%EF%BC%9F%2F</url>
+    <content type="text"><![CDATA[还在用电脑和U盘保存你的文件吗？ 文件备份的重要性今天不小心删了一个虚拟机文件，然后，虚拟机里所有的文件都没了。。 我的心在滴血555 这个故事告诉我们，电脑里的文件一定要备份，因为有下面3种可能导致文件消失： 电脑坏了/丢了 U盘坏了/丢了 自己手贱删了 我的建议 经过博主长期的实践，推荐两款产品进行文件备份：百度网盘/坚果云 百度网盘这个算是很大众的产品了，相信很多小伙伴都在用： 它的优点是容量大，缺点是不能自动上传文件，所以需要你自己每隔一段时间维护一次。所以建议你把文件分门别类的放好，这样也好管理。 坚果云第一次是用坚果云的小伙伴，一定会觉得这是个神器。因为相较于百度网盘，坚果云的最大好处就是可以自动识别发生变化的文件，并将其上传。 在下方创建一个同步文件夹，之后就会自动上传，不用手动维护： 缺点是一个账号免费流量只有1G，所以只能保存一些文本文件： 因为坚果云是用邮箱来注册的，所以我们可以多注册几个账号，这样流量就多啦~。可以多注册几个163字母邮箱（一天只能注册3个）。 总结一下根据百度网盘和坚果云特点，我们可以把一些大的、不常更新的文件定期上传到百度网盘里，比如：视频/软件安装包等等。 而一些小的，经常更新的文件用坚果云来同步，比如文本文件。 By The Way…亲们如果有什么更好的方法，可以在评论里向我推荐，感激不尽。。。]]></content>
+      <categories>
+        <category>工具使用</category>
+      </categories>
+      <tags>
+        <tag>文件备份</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[java类中的代码块执行顺序]]></title>
     <url>%2Fjava%E7%B1%BB%E4%B8%AD%E7%9A%84%E4%BB%A3%E7%A0%81%E5%9D%97%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F%2F</url>
     <content type="text"><![CDATA[代码实例分析java类中的代码块执行顺序. 一道笔试题下面是一道阿里的java校招笔试题： 123456789101112131415161718192021222324252627282930313233343536373839404142434445class HelloA&#123; //构造方法 public HelloA() &#123; System.out.println("父类构造方法"); &#125; //非静态代码块 &#123; System.out.println("父类非静态代码块"); &#125; //静态代码块 static&#123; System.out.println("父类静态代码块"); &#125;&#125;class HelloB extends HelloA&#123; //构造方法 public HelloB() &#123; System.out.println("子类构造方法"); &#125; //非静态代码块 &#123; System.out.println("子类非静态代码块"); &#125; //静态代码块 static&#123; System.out.println("子类静态代码块"); &#125; &#125;public class Test&#123; public static void main(String[] args) &#123; new HelloB(); new HelloB(); &#125;&#125; 请写出上述代码的输出，看完本文你就会有答案。 代码块分类及其执行顺序代码块分类代码块，就是使用”{}”定义的一段代码，根据代码块定义的位置和关键字，可分为以下四种： 普通代码块：定义在类的方法中的代码块。 构造块：定义在类中的代码块（无修饰符）。 静态代码块：使用static修饰的，在类中定义的代码块。 同步代码块（与多线程有关，本文不涉及） 执行顺序（无继承）看代码： 12345678910111213141516171819202122232425262728293031323334353637383940414243class Person&#123; public Person() &#123; System.out.println("非主类构造方法"); &#125; &#123; System.out.println("非主类构造块,优于构造方法执行"); &#125; static &#123; System.out.println("非主类静态块，优于构造块执行，无论产生多少实例化对象，只执行一次。"); &#125; &#125;public class Hello&#123; public Hello() &#123; System.out.println("主类构造方法"); &#125; public static void main(String[] args) &#123; System.out.println("----start----"); new Hello(); new Person(); new Person(); new Hello(); System.out.println("-----end-----"); &#125; &#123; System.out.println("主类构造块"); &#125; static&#123; System.out.println("主类静态块，优于主方法执行"); &#125;&#125; 执行结果： 结论： 其中： 主类静态块优于主方法执行。 无论生成多少类对象，静态块只执行一次。 主类和非主类的构造方法、构造块谁先执行取决于代码顺序，与主类/非主类无关。 执行顺序（有继承）我们知道，在继承的情况下，子类在实例化时，首先调用父类的构造方法，然后再调用子类的构造方法。因此，结合上面的结论，我们就可以得出开始那道笔试题的结果。 为了方便观察，对代码改动如下： 1234567891011public class Test&#123; public static void main(String[] args) &#123; System.out.println("----start----"); System.out.println("---first---"); new HelloB();//first System.out.println("---second---"); new HelloB();//second System.out.println("-----end-----"); &#125;&#125; 答案在这里：]]></content>
