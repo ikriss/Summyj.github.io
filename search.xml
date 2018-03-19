@@ -337,7 +337,7 @@
   <entry>
     <title><![CDATA[TC]]></title>
     <url>%2FFirstBlog%2F</url>
-    <content type="text"><![CDATA[Charge for non-free Videos 测哪\咋测 功能测试 集成测试 性能测试 安全测试 端到端 test test test test API test test test test 类 test test test test 方法 test test test test Advertisement]]></content>
+    <content type="text"><![CDATA[Charge for non-free Videos TC Number TC Level 模块 测试目的 预置条件 测试步骤 预期结果 测试结果 1 High 付费规则 Guest用户（无账号）视频付费规则验证 已打开视频播放系统 1.进入电视剧视频界面 2.1进入娱乐视频界面2.2点击观看付费视频 3.1进入电影视频界面3.2点击观看付费视频 4.1进入音乐视频界面4.2点击观看付费视频 | 1.界面显示正常，且无付费视频 2.1界面显示正常，存在付费视频2.2界面显示提示信息”You are not logged in yet, Please log in as a Member/VIP to see more video” 3.同2 4.同2| —— | Advertisement]]></content>
       <categories>
         <category>生活随想</category>
       </categories>
